@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func GetInfo(s interface{}, ss string) (reflect.Value, error) {
+func (s GitRepoReply) PrintInfo(ss string) (reflect.Value, error) {
 	var typ reflect.Type
 	var val reflect.Value
 	ptyp := reflect.TypeOf(s)  // a reflect.Type
